@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彭艺玉的个人网站</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* Header 样式 */
+        header {
+            background: linear-gradient(to right, #4CAF50, #2196F3); /* 绿色到蓝色渐变 */
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* 导航栏 */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            transform: scale(1.1);
+        }
+
+        /* 页面内容 */
+        .container {
+            padding: 60px 20px;
+        }
+
+        .section {
+            padding: 80px 20px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeUp 1.5s forwards;
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .cta-btn {
+            background-color: #FF9800;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-btn:hover {
+            background-color: #FF5722;
+            transform: translateY(-5px);
+        }
+
+        /* 图片样式 */
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+            border: 5px solid #4CAF50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer 样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* 动画效果 */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+            nav a {
+                padding: 12px 18px;
+                font-size: 16px;
+            }
+            .section {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>欢迎来到彭艺玉的个人网站</h1>
+        <p>创新与设计的结合，提升生活与工作的品质</p>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#about">关于我</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="container">
+        <section id="home" class="section">
+            <h2>首页内容</h2>
+            <p>欢迎访问彭艺玉的个人网站！我是一个热衷于数字营销和网页设计的创意工作者，致力于通过科技和艺术的结合来推动项目的成功。在这个网站中，您将了解到我如何通过创新的方式将复杂的挑战转化为简单而有效的解决方案。</p>
+            <p>除此之外，我还担任着网格员这一社会职务，参与到社区治理和居民生活的管理中，尽我所能为社区的发展和居民的幸福做出贡献。我相信，服务社会是一项重要责任，而这也是我不断努力的动力之一。</p>
+            <a href="#contact" class="cta-btn">立即联系我</a>
+        </section>
+
+        <section id="about" class="section">
+            <h2>关于彭艺玉</h2>
+            <!-- 使用 Imgur 图片链接 -->
+            <img src="https://i.imgur.com/N7CvMPE.jpeg" alt="彭艺玉的照片" class="profile-img">
+            <p><strong>彭艺玉</strong>，1987年出生，是一位兼具创新精神和社会责任感的工作者。她不仅在数字营销和网页设计领域表现突出，还作为网格员，积极参与社区治理和公共服务。</p>
+            <p>作为一名网格员，彭艺玉负责管理辖区内的居民事务，协助居民解决日常生活中的问题，并与社区管理部门密切合作，确保社区的安全、整洁和和谐。她通过细致的工作，促进了社区服务质量的提升，也帮助解决了许多居民的实际困难。</p>
+            <p>在工作中，彭艺玉始终秉持着“服务为民”的理念，努力为社区居民提供帮助，并通过创新的方式改善居民的生活环境。她认为，社区的良好发展离不开每一个人的努力，而她乐于贡献自己的一份力量。</p>
+            <a href="#contact" class="cta-btn">了解更多</a>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>联系我们</h2>
+            <p>如果您对我的工作有兴趣或需要进一步的帮助，欢迎通过以下方式与我取得联系：</p>
+            <ul>
+                <li>邮箱：<a href="mailto:pengyiyu@example.com">pengyiyu@example.com</a></li>
+                <li>微信：<a href="https://weixin.qq.com">微信号</a></li>
+                <li>LinkedIn：<a href="https://www.linkedin.com/in/pengyiyu">LinkedIn 个人页面</a></li>
+            </ul>
+            <a href="mailto:pengyiyu@example.com" class="cta-btn">发邮件给我</a>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 彭艺玉的个人网站 | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
